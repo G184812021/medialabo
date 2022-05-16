@@ -23,6 +23,7 @@ function hantei() {
     if (kaisu < 3){
         if (yoso === kotae) {
             console.log("正解です.おめでとう!");
+            Kaisu = 4;
         }else if (yoso > kotae) {
             console.log("まちがい. 答えはもっと小さいですよ");
         }else if (yoso < kotae) {
