@@ -2,11 +2,11 @@
 
 html {
   font-family: 'Helvetica neue', Arial, 'sans serif';
-  font-size: 10px;
+  font-size: 15px;
 }
 
 body {
-  width: 80em;
+  width: 60em;
   margin: 0 auto;
 }
 
@@ -29,13 +29,13 @@ pli {
 /* header and footer */
 
 header, footer {
-  background-colour: teal;
+  background: teal;
   height: 10em;
   padding: 2em;
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 0;
 }
 
 h1 {
@@ -54,6 +54,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
   margin: 1.2em 2em;
 }
