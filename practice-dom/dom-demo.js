@@ -3,6 +3,7 @@ eu.remove();
 
 let ul = document.querySelector('ul');
 let li;
+li = document.createElement('li');
 li.textContent = 'アジア大陸';
 ul.insertAdjacentElement('beforeend', li);
 
@@ -10,7 +11,7 @@ li = document.createElement('li');
 li.textContent = 'ヨーロッパ大陸';
 ul.insertAdjacentElement('beforeend', li);
 
-let h2sevenOcean = document.querySelector('h2');
+let h2sevenOcean = document.querySelector('h2#savenOcean');
 
 // 7大洋　の名前を配列に代入
 let oceans = [
@@ -24,13 +25,20 @@ let oceans = [
 ]
 
 // ul 要素を新規作成する．（次の行を完成させる）
-//ul = 
+ul = document.createElement('ul');
 
 // ul 要素を h2sevenOcean の次に追加する（次の行を書く）
+h2sevenOcean.insertAdjacentElement('afterend', ul);
 
-
-/* ul に7つの大陸を追加する
+// ul に7つの大陸を追加する
 for (let o of oceans) {
-  // （この中を完成させる）
+  //（この中を完成させる）
+li = document.createElement('li');
+li.textContent = o;
+ul.insertAdjacentElement('beforeend', li);
+}
 
-}*/
+let h2s = document.querySelectorAll('h2');
+for(let h2 of h2s) {
+    h2.style.backgroundColor = 'palegreen'
+}
