@@ -86,4 +86,5 @@ for (let m of data.list.g1) {
     console.log(m.title);
 }
 
-
+let a = document.querySelector('span#title');
+a.textContent = data.list.gi[0].title;
