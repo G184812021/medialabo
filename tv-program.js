@@ -87,4 +87,14 @@ for (let m of data.list.g1) {
 }
 
 let a = document.querySelector('span#title');
-a.textContent = data.list.gi[0].title;
+a.textContent = data.list.g1[0].title;
+let b = document.querySelector('span#kaisi');
+b.textContent = data.list.g1[0].start_time;
+let c = document.querySelector('span#owari');
+c.textContent = data.list.g1[0].end_time;
+let e = document.querySelector('span#cast');
+e.textContent = data.list.g1[0].act;
+let g = document.querySelector('span#setsumei');
+g.textContent = data.list.g1[0].content;
+let h = document.querySelector('span#sabutai');
+h.textContent = data.list.g1[0].subtitle;
