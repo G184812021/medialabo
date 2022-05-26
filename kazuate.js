@@ -4,7 +4,7 @@ console.log('答え: ' + kotae);      // デバッグ用
 
 // 入力回数（予想回数）
 let kaisu = 0;
-
+let hyouzi = 0;
 // 予想を4回実行する
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 let a = document.querySelector('button#print');
@@ -19,9 +19,10 @@ function hantei() {
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
     kaisu = kaisu + 1;
+    hyouzi = hyouzi + 1;
     let pr = document.querySelector('span#result');
     let yo = document.querySelector('span#yos');
-    yo.textContent = kaisu+'回目の予想: '+s;
+    yo.textContent = hyouzi+'回目の予想: '+s;
         if (kaisu < 3){
         if (s === kotae) {
             pr.textContent = '正解です.おめでとう!';

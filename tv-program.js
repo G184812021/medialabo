@@ -85,16 +85,18 @@ let data = {
 for (let m of data.list.g1) {
     console.log(m.title);
 }
+let b = document.querySelector('button#print');
+b.addEventListener('click', kensaku);
+
+function kensaku() {
+
 
 let a = document.querySelector('span#title');
-a.textContent = data.list.g1[0].title;
-let b = document.querySelector('span#kaisi');
-b.textContent = data.list.g1[0].start_time;
-let c = document.querySelector('span#owari');
-c.textContent = data.list.g1[0].end_time;
+a.textContent = data.list.g1[1].title;
 let e = document.querySelector('span#cast');
-e.textContent = data.list.g1[0].act;
+e.textContent = data.list.g1[1].act;
 let g = document.querySelector('span#setsumei');
-g.textContent = data.list.g1[0].content;
+g.textContent = data.list.g1[1].content;
 let h = document.querySelector('span#sabutai');
-h.textContent = data.list.g1[0].subtitle;
+h.textContent = data.list.g1[1].subtitle;
+}
