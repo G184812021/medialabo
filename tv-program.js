@@ -89,14 +89,16 @@ let b = document.querySelector('button#print');
 b.addEventListener('click', kensaku);
 
 function kensaku() {
-
+  let b = document.querySelector('input[name="a"]');
+  let yoso = b.value;
+  let d = Number(yoso);
 
 let a = document.querySelector('span#title');
-a.textContent = data.list.g1[1].title;
+a.textContent = data.list.g1[d].title;
 let e = document.querySelector('span#cast');
-e.textContent = data.list.g1[1].act;
+e.textContent = data.list.g1[d].act;
 let g = document.querySelector('span#setsumei');
-g.textContent = data.list.g1[1].content;
+g.textContent = data.list.g1[d].content;
 let h = document.querySelector('span#sabutai');
-h.textContent = data.list.g1[1].subtitle;
+h.textContent = data.list.g1[d].subtitle;
 }
