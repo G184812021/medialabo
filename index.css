@@ -1,4 +1,22 @@
 
 body {
-    background:lawngreen;
+    font-style: oblique;
+    background:rgb(178, 211, 145);
+}
+h1 {
+    border-bottom: solid rgb(114, 13, 13);
+}
+a:link {
+    color:blue;
+}
+a:visited {
+    color:brown;
+}
+div{
+    border: 16px ridge rgb(139, 18, 18);
+    background:  rgb(240, 234, 214);
+    margin: 30px;
+}
+h3 {
+    border-bottom: solid brown;
 }

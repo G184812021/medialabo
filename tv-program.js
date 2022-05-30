@@ -101,4 +101,12 @@ let g = document.querySelector('span#setsumei');
 g.textContent = data.list.g1[d].content;
 let h = document.querySelector('span#sabutai');
 h.textContent = data.list.g1[d].subtitle;
+let t = document.querySelector('span#t');
+t.textContent = '番組名';
+let sa = document.querySelector('span#sa');
+sa.textContent = 'サブタイトル';
+let ca = document.querySelector('span#ca');
+ca.textContent = '出演者';
+let se = document.querySelector('span#se');
+se.textContent = '番組説明文';
 }

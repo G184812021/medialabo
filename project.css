@@ -1,3 +1,9 @@
 body {
     background: beige;
 }
+th{
+    border: solid red;
+}
+ul {
+    border: solid brown;
+}
