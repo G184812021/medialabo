@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset=""utf-8">
+        <meta charset="utf-8">
         <title>project.html</title>   
         <link rel="stylesheet" href="project.css">
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
         <script src="tv-program.js" defer></script>
     </head>
     <body>
+        <h1>NHkの番組情報</h1>
+        <p>ジャンルは下の表から選ぶ.</p>
         <lebel for="a"></lebel>
-        <input type="service" name="b" id="b" size="50" placeholder="g1かe2を入力.(g1はNHK総合1，e1はEテレ1)">
-        <input type="genre" name="a" id="a" size="50" placeholder="4桁の数字を入力.">
+        <input type="service" name="b" id="b" size="41" placeholder="g1かe2を入力.(g1はNHK総合1，e1はEテレ1)">
+        <input type="genre" name="a" id="a" size="20" placeholder="4桁の数字を入力.">
         <button id="print">検索</button>
         
         <ul>
@@ -28,20 +30,8 @@
             <li>1100 ... 福祉</li>
 
         </ul>
-        <table>
-            <tr>
-            <th><span id="t"></span></th>
-                <th><span id="sa"></span></th>
-                <th><span id="ca"></span></th>
-                <th><span id="se"></span></th>
-            </tr>
-            <tr>
-                <th><span id="title"></span></th>
-                <th><span id="sabutai"></span></th>
-                <th><span id="cast"></span></th>
-                <th><span id="setsumei"></span></th>
-            </tr>
-        </table>
+        
+        
         
         
 

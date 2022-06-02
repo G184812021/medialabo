@@ -2,8 +2,11 @@ body {
     background: beige;
 }
 th{
-    border: solid red;
+    border: solid brown;
 }
 ul {
     border: solid brown;
+}
+table {
+    margin:50px;
 }
