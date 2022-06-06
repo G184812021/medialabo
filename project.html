@@ -11,7 +11,11 @@
         <h1>NHkの番組情報</h1>
         <h4>ジャンルは下の表から選ぶ.</h4>
         <div id="zentai"><div id="kensaku"><lebel for="a"></lebel>
-        <input type="service" name="b" id="b" size="41" placeholder="g1かe2を入力.(g1はNHK総合1，e1はEテレ1)">
+            <select name="b" size="1">
+                <option value="">局を選択</option>
+                <option value='g1'>NHK総合１</option>
+                <option value='e1'>Eテレ１</option>
+              </select>
         <input type="genre" name="a" id="a" size="20" placeholder="4桁の数字を入力.">
         <button id="print">検索</button></div>
         

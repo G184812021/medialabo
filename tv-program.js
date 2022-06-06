@@ -2,7 +2,7 @@ let b = document.querySelector('button#print');
 b.addEventListener('click', Request);
 let kaisu = 0;
 function Request() {
-  let b = document.querySelector('input[name="b"]');
+  let b = document.querySelector('select[name="b"]');
   let c = document.querySelector('input[name="a"]');
   let service = b.value;
   let genre = c.value;
@@ -16,7 +16,7 @@ axios.get(url)
 
 
 function kensaku(resp) {
-  let b = document.querySelector('input[name="b"]');
+  let b = document.querySelector('select[name="b"]');
   let service = b.value;
   let data = resp.data;
   if(kaisu > 0) {

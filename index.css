@@ -2,6 +2,7 @@
 body {
     font-style: oblique;
     background:rgb(178, 211, 145);
+    margin:30px;
 }
 h1 {
     border-bottom: solid rgb(114, 13, 13);
