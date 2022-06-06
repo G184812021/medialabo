@@ -19,10 +19,19 @@ function kensaku(resp) {
   let b = document.querySelector('input[name="b"]');
   let service = b.value;
   let data = resp.data;
-  if (kaisu > 0) {
-    let table1 = document.querySelectorAll('table')
-    table1.remove()
+  if(kaisu > 0) {
+    let y = document.querySelector('p');
+    if (y !== null) {
+      y.remove();
     }
+    let w;
+    let t = document.querySelectorAll('table');
+    console.log(t.length);
+    for (let i = 0;i<t.length;i++) {
+      w = document.querySelector('table');
+      w.remove();
+    }
+  }
   if (typeof data === 'string') {
     data = JSON.parse(data);
   }
@@ -41,27 +50,27 @@ function kensaku(resp) {
     for (let i = 0; i<o.length;i++){
   table = document.createElement('table');
   ul.insertAdjacentElement('afterend', table);
-  tr2 = document.createElement('tr');
-  table.insertAdjacentElement('beforeend', tr2);
+  tr = document.createElement('tr');
+  table.insertAdjacentElement('beforeend', tr);
   for(let w of mi) {
     th = document.createElement('th');
     th.textContent = w;
-    tr2.insertAdjacentElement('beforeend', th);
+    tr.insertAdjacentElement('beforeend', th);
   }
-  tr1 = document.createElement('tr');
-  table.insertAdjacentElement('beforeend', tr1);
-  th1 = document.createElement('th')
-  th1.textContent = o[i].title;
-  tr1.insertAdjacentElement('beforeend', th1)
-  th2 = document.createElement('th')
-  th2.textContent = o[i].subtitle;
-  tr1.insertAdjacentElement('beforeend', th2)
-  th3 = document.createElement('th')
-  th3.textContent = o[i].act;
-  tr1.insertAdjacentElement('beforeend', th3)
-  th4 = document.createElement('th')
-  th4.textContent = o[i].content;
-  tr1.insertAdjacentElement('beforeend', th4)
+  tr = document.createElement('tr');
+  table.insertAdjacentElement('beforeend', tr);
+  th = document.createElement('th')
+  th.textContent = o[i].title;
+  tr.insertAdjacentElement('beforeend', th)
+  th = document.createElement('th')
+  th.textContent = o[i].subtitle;
+  tr.insertAdjacentElement('beforeend', th)
+  th = document.createElement('th')
+  th.textContent = o[i].act;
+  tr.insertAdjacentElement('beforeend', th)
+  th = document.createElement('th')
+  th.textContent = o[i].content;
+  tr.insertAdjacentElement('beforeend', th)
 }
 }
 }

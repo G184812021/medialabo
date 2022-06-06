@@ -4,8 +4,13 @@ body {
 th{
     border: solid brown;
 }
+div.zentai{
+    display: flex;
+    flex-direction:row;
+}
 ul {
     border: solid brown;
+    margin: 1rem;
 }
 table {
     margin:50px;
